@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+.main-title{ color: #fff !important;
+font-size: 45px;
+margin-bottom: 15px;}
+
+
+
+.main-title-dark{ color: #000 !important;
+font-size: 45px !important;
+margin-bottom: 15px;}
+
+
+.pararaph-small{
+    font-size: 14px;
+    color: #212529 !important;
+    text-align: center;
+    font-style: normal;
+
+}

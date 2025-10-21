@@ -1,0 +1,190 @@
+/* ===== BASE PAGE ===== */
+.institute-page {
+  font-family: "Poppins", sans-serif;
+  background: #f5f8ff;
+  margin: 0;
+  padding: 0;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+/* ===== BANNER SECTION ===== */
+.institute-banner {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background: url('../assets/images/background.webp') center center / cover no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px 50px 0 50px;
+  box-sizing: border-box;
+}
+
+.banner-left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: #fff;
+  text-shadow: 1px 2px 8px rgba(0,0,0,0.7);
+  margin-top: 40px;
+}
+
+.banner-left-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rocket-decor {
+  width: 100px;
+  animation: floatDrone 3.5s ease-in-out infinite alternate;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+@keyframes floatDrone {
+  from { transform: translateY(0); }
+  to { transform: translateY(-12px); }
+}
+
+/* ===== COURSES GRID ===== */
+.institute-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 48px;
+  max-width: 1350px;
+  margin: 70px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* ===== COURSE CARD ===== */
+.institute-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.institute-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== IMAGE SECTION ===== */
+.course-image-wrapper {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  background: #fdfdfd;
+}
+
+.institute-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* full image visible */
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.institute-card:hover .institute-img {
+  transform: scale(1.03);
+}
+
+/* ===== COURSE DETAILS ===== */
+.institute-details {
+  flex: 1; /* ensures content area stretches evenly */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* keeps button fixed at bottom */
+  padding: 18px 20px 20px;
+  box-sizing: border-box;
+}
+
+/* ===== COURSE TEXT ===== */
+.course-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0b2f6a;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.course-meta {
+  font-size: 0.93rem;
+  color: #64748b;
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+/* ===== VIEW DETAILS BUTTON ===== */
+.btn-enrol {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.btn-enrol:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(3,105,161,0.4);
+}
+
+/* ===== HIDE UNUSED FOOTER ===== */
+.course-footer {
+  display: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .institute-banner {
+    height: 350px;
+    padding: 20px 30px 0 30px;
+  }
+  .banner-left-content h1 {
+    font-size: 2.3rem;
+  }
+  .rocket-decor {
+    width: 80px;
+  }
+  .course-image-wrapper {
+    height: 230px;
+  }
+  .institute-container {
+    gap: 36px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .institute-banner {
+    height: 260px;
+    padding: 15px 20px 0 20px;
+  }
+  .banner-left-content h1 {
+    font-size: 1.8rem;
+  }
+  .rocket-decor {
+    width: 60px;
+  }
+  .course-image-wrapper {
+    height: 200px;
+  }
+  .institute-container {
+    gap: 28px;
+    padding: 0 20px;
+  }
+}

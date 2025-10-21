@@ -1,0 +1,77 @@
+.about-short.section-pastel {
+  background-color: #f0f1f2;
+  border-radius: 12px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      background-color: #F8F8FA;
+    background-image: url(https://gerow-wp.themedox.com/wp-content/uploads/2023/08/pricing_shape.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+  .sub-title-round {
+    background: #1E376A;
+    color: #f5f0f0;
+    padding: 22px 93px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.about-title {
+  color: #000 !important;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: left;
+}
+.about-text-col {
+  color: #0e0d0d;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ul.features-list {
+  color: #080808;
+  font-size: 1.13rem;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.section-pastel .btn-primary {
+  background: #296bca;
+  border-radius: 13px;
+  font-size: 1.1rem;
+  padding: 0.7rem 0.rem;
+  margin-top: 12px;
+}
+.about-img-main {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 40px rgba(30, 60, 100, 0.13);
+}
+@media (max-width: 991.98px) {
+  .about-short.section-pastel {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 24px;
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-title, .about-text-col, .feature-list {
+    text-align: center !important;
+  }
+  .about-img-main {
+    margin-top: 24px;
+    max-width: 90vw;
+  }
+}

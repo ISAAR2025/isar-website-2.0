@@ -1,0 +1,50 @@
+/* Section wrapper in soft pastel to match site palette */
+.contact-request.section-pastel {
+  background-color: #fefefe; /* light pastel blue */
+  border-radius: 12px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Frosted panel for the form */
+.glass-lite {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 12px;
+}
+
+/* Map container keeps aspect ratio and full width */
+.map-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 ratio */
+  background: #f1f5ff;
+}
+
+.map-embed {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Card rounding consistency */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .contact-request.section-pastel {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 24px;
+  }
+}
