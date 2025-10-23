@@ -170,3 +170,17 @@
     color: #aaa !important;
   }
 }
+@media (max-width: 575.98px) {
+  .btn,
+  .btn-lg {
+    width: 70%;                /* Set button width to 70% of its parent */
+    min-width: 140px;          /* Optional: Minimum width for legibility */
+    max-width: 270px;          /* Optional: Maximum width for visual balance */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;        /* Center the button horizontally */
+    padding: 0.55rem 1rem;
+    font-size: 0.97rem;
+    box-sizing: border-box;
+  }
+}
