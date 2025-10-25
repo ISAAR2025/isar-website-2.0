@@ -39,23 +39,41 @@
   align-items: center;
   gap: 8px;
   font-size: 0.95rem;
-  color: #d2e8f8;
   flex-wrap: wrap;
 }
 
-.breadcrumb span {
-  cursor: pointer;
+/* Breadcrumb for HERO (light text on dark bg) */
+.course-hero .breadcrumb span {
   color: #ffffff;
   opacity: 0.9;
+  cursor: pointer;
   transition: opacity 0.25s ease;
 }
 
-.breadcrumb span:hover {
+.course-hero .breadcrumb span:hover {
   opacity: 1;
 }
 
-.breadcrumb span.active-page {
+.course-hero .breadcrumb span.active-page {
   color: #fff;
+  font-weight: 600;
+}
+
+/* Breadcrumb for WHITE BACKGROUND (dark text) */
+.breadcrumb.light span {
+  color: #1d4f91;
+  opacity: 0.85;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+
+.breadcrumb.light span:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.breadcrumb.light span.active-page {
+  color: #0b3b59;
   font-weight: 600;
 }
 
@@ -243,5 +261,4 @@
   .hero-title {
     font-size: 1.6rem;
   }
-  
 }
