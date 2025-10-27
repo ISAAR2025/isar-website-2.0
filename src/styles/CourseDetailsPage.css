@@ -10,20 +10,22 @@
 .course-hero {
   position: relative;
   width: 100%;
-  height: 280px;
-  background-color: #266ab1; /* solid blue */
+  min-height: 280px;
+  background-color: #266ab1;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .hero-overlay {
   width: 100%;
-  padding: 60px max(6vw, 32px);
+  padding: 120px max(6vw, 32px) 60px; /* top padding ensures visibility under navbar */
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  z-index: 2;
+  position: relative;
 }
 
 .hero-title {
@@ -40,9 +42,10 @@
   gap: 8px;
   font-size: 0.95rem;
   flex-wrap: wrap;
+  z-index: 3;
+  position: relative;
 }
 
-/* Breadcrumb for HERO (light text on dark bg) */
 .course-hero .breadcrumb span {
   color: #ffffff;
   opacity: 0.9;
@@ -56,24 +59,6 @@
 
 .course-hero .breadcrumb span.active-page {
   color: #fff;
-  font-weight: 600;
-}
-
-/* Breadcrumb for WHITE BACKGROUND (dark text) */
-.breadcrumb.light span {
-  color: #1d4f91;
-  opacity: 0.85;
-  cursor: pointer;
-  transition: opacity 0.25s ease;
-}
-
-.breadcrumb.light span:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-.breadcrumb.light span.active-page {
-  color: #0b3b59;
   font-weight: 600;
 }
 
@@ -242,7 +227,7 @@
 
 @media (max-width: 576px) {
   .hero-overlay {
-    padding: 40px 20px;
+    padding: 140px 20px 40px; /* top increased for mobile navbar */
   }
 
   .course-main {
