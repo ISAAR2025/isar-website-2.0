@@ -26,7 +26,7 @@ const CourseDetailsPage = () => {
           <div className="breadcrumb">
             <span onClick={() => navigate("/")}>Home</span>
             <FaChevronRight className="breadcrumb-icon" />
-            <span onClick={() => navigate("/courses")}>Courses</span>
+            <span onClick={() => navigate("/Institute")}>Courses</span>
             <FaChevronRight className="breadcrumb-icon" />
             <span className="active-page">{course.title}</span>
           </div>
